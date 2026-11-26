@@ -1,0 +1,10 @@
+# robots.txt for https://karthikcs.vercel.app
+User-agent: *
+Allow: /
+
+# Explicitly allow Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Sitemap location
+Sitemap: https://karthikcs.vercel.app/sitemap.xml

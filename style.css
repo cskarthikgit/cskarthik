@@ -137,6 +137,8 @@ ul, ol { list-style: none; }
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid transparent;
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
   transition: border-color var(--transition-base), background var(--transition-base), box-shadow var(--transition-base);
 }
 
@@ -630,27 +632,14 @@ ul, ol { list-style: none; }
   .hero-container {
     padding-top: calc(var(--nav-height) + 3rem);
     padding-bottom: var(--space-16);
-    padding-left: var(--space-6);
-    padding-right: var(--space-6);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .hero-name-line {
     font-size: clamp(3.8rem, 16vw, 5.5rem);
   }
   .hero-deco-svg { width: 90%; opacity: 0.5; }
   .hero-scroll-indicator { display: none; }
-  .hero-meta-pill { margin-left: 0; }
-}
-
-@media (max-width: 480px) {
-  .hero-container {
-    padding-top: calc(var(--nav-height) + 2.5rem);
-    padding-bottom: var(--space-12);
-    padding-left: var(--space-5);
-    padding-right: var(--space-5);
-  }
-  .hero-name-line {
-    font-size: clamp(3rem, 18vw, 4.5rem);
-  }
   .hero-footer-row {
     flex-direction: column;
     align-items: flex-start;
@@ -671,6 +660,18 @@ ul, ol { list-style: none; }
     padding: 0.45rem 0.9rem;
     font-size: 0.72rem;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    padding-top: calc(var(--nav-height) + 2.5rem);
+    padding-bottom: var(--space-12);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .hero-name-line {
+    font-size: clamp(3rem, 18vw, 4.5rem);
   }
   .hero-actions .btn {
     flex: 1;
@@ -1364,7 +1365,7 @@ ul, ol { list-style: none; }
   }
 
   /* Mobile nav */
-  .nav-container { padding: 0 var(--space-6); }
+  .nav-container { padding: 0 1.5rem; }
   .nav-links {
     position: fixed;
     top: 0;
@@ -1429,7 +1430,7 @@ ul, ol { list-style: none; }
 
 @media (max-width: 480px) {
   .nav-container {
-    padding: 0 var(--space-5);
+    padding: 0 1.25rem;
   }
   .skills-compact-grid {
     grid-template-columns: repeat(2, 1fr);
