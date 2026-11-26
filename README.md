@@ -35,8 +35,8 @@ Profile/
 ## 💻 Local Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/cskarthikgit/portfolio.git
-   cd portfolio
+   git clone https://github.com/cskarthikgit/cskarthik.git
+   cd cskarthik
    ```
 2. Open `index.html` directly in your favorite web browser. No build steps, bundlers, or servers required!
 
